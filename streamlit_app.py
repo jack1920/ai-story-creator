@@ -3,7 +3,18 @@ import streamlit as st
 import os
 
 # streamlit run streamlit_app.py
+# chatgpt plot to story
 # https://www.taskade.com/templates/ai/chatgpt-novel-writing
+# https://www.storyflint.com/blog/how-to-use-chat-gpt-for-storytelling
+# https://www.allabtai.com/how-to-write-a-story-in-chatgpt-prompt-engineering/
+# https://www.makeuseof.com/use-chatgpt-to-write-novel/
+# https://www.makeuseof.com/chatgpt-how-to-master-storytelling/
+# https://medium.com/@neonforge/how-to-write-a-book-with-help-of-chatgpt-practical-step-by-step-guide-d190994b67b4
+# https://basmo.app/how-to-write-a-book-with-chatgpt/
+# https://www.writingbeginner.com/how-to-write-a-novel-with-chatgpt/
+# https://www.nichepursuits.com/how-to-use-chatgpt-to-write-a-book/
+# https://www.griproom.com/fun/how-to-use-chatgpt-to-write-a-short-story
+# 
 
 try:
     st.title('AI Story Writing Assistant :sunglasses:')
@@ -41,6 +52,7 @@ try:
     prompt_prefix = st.sidebar.radio(
     "Select a prompt type", tuple(prompt_prefix_list))
 
+    st.text(service_type)
     st.text(prompt_prefix)
 
     story_plot = st.text_area('Write your plot here')
