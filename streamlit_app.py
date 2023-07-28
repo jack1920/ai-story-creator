@@ -6,8 +6,6 @@ import os
 # https://www.taskade.com/templates/ai/chatgpt-novel-writing
 
 try:
-    openai.api_key = OPENAI_API_KEY
-
     st.title('AI Story Writing Assistant :sunglasses:')
 
     service_type = st.sidebar.radio(
