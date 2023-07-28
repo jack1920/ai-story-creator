@@ -61,7 +61,7 @@ try:
 
     if st.button('Submit your plot'):
         if len(story_plot) <= 0:
-            st.error('Please write a plot and try again.')
+            st.error('Please type some text input and try again.')
         else:
             prompt = f'{prompt_prefix} "{story_plot}"'
             # st.write(f'prompt: {prompt}')
